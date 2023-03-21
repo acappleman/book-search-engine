@@ -78,9 +78,10 @@ const SearchBooks = () => {
 
     try {
       console.log(bookToSave);
-      const { data } = await saveBook({
+      console.log(saveBook);
+      const { loading, data } = await saveBook({
         variables: {
-          bookId,
+          bookId: bookToSave.bookId,
           authors: bookToSave.authors,
           description: bookToSave.description,
           title: bookToSave.title,
@@ -88,6 +89,8 @@ const SearchBooks = () => {
           link: bookToSave.link,
         },
       });
+      console.log('Loading', loading);
+      console.log('Data', data)
 
       // if book successfully saves to user's account, save book id to state
       setSavedBookIds([...savedBookIds, bookToSave.bookId]);

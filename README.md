@@ -8,7 +8,6 @@ This book searching application was built to search for books using the Google B
 
 You can access the application via the deployment at https://book-search-engine-acappleman.herokuapp.com/ or by cloning the repo and running `npm run install`, then `npm run develop`. 
 
-
 ## Credits
 
 Thanks to [w3schools](https://w3schools.com) and [MDN Web Docs](https://developer.mozilla.org/en-US/) for JavaScript tutorials. Also thank you to [Mongoose Documentation](https://mongoosejs.com/docs/6.x/docs/guide.html) and [Apollo Documentation](https://www.apollographql.com/docs/apollo-server/).
